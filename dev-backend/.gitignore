@@ -1,0 +1,31 @@
+﻿# Rider project files
+.idea/
+*.sln.iml
+
+# Build results
+/bin/
+/obj/
+/out/
+
+# Visual Studio files
+*.user
+*.suo
+*.vcxproj.*
+*.pdb
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Rider caches
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
