@@ -65,4 +65,17 @@ public class VeiculosController : Controller
         
         return View();
     }
+
+    public async Task<IActionResult> Details(int? id)
+    {
+        if (id == null)
+            return NotFound();
+        
+        var veiculo = await _context.Veiculos.FindAsync(id);
+        
+        if (veiculo == null)
+            return NotFound();
+        
+        return View(veiculo);
+    }
 }
