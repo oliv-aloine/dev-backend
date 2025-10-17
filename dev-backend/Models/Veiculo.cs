@@ -22,4 +22,6 @@ public class Veiculo
     [Required(ErrorMessage = "Ano do Modelo obrigatório.")]
     [Display(Name="Ano do Modelo")]
     public int AnoModelo { get; set; }
+    
+    public ICollection<Consumo>? Consumos { get; set; }
 }
